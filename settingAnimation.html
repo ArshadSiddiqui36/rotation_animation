@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Setting Animation</title>
+	<style type="text/css">
+
+		.setting_icon1 {
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		.img1{
+			width: 120px;
+			height: 120px;
+			/*animation-name: animate;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;*/
+			animation: animate 10s infinite linear;
+		}
+		@keyframes animate{
+			from{ transform: rotate(-360deg); }
+			to{ transform: rotate(360deg); }
+		}
+
+		.img2{
+			width: 245px;
+			height: 245px;
+			margin-top: -15px;
+			/*margin-top: -55px;*/
+			/*animation-name: animate;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;*/
+			animation: animate2 20s infinite linear;
+		}
+		@keyframes animate2{
+			from{ transform: rotate(360deg); }
+			to{ transform: rotate(-360deg); }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="setting_icon1">
+		<img src="images/Setting Logo2.svg" alt="" class="img1">
+		<img src="images/Setting Logo1.svg" alt="" class="img2">
+	</div>
+</body>
+</html>
